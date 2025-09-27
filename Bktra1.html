@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-     <style>
+    <title>Document</title>
+    <style>
     table, th, td {
   border: 3px double black; 
   border-collapse: collapse;
@@ -62,9 +62,14 @@
         <tr>
             <td>Giới tính</td>
             <td>
-            <input type="radio" name="gender" checked> Nam
-            <input type="radio" name="gender"> Nữ
-            <input type="radio" name="gender"> Khác
+            <input type="radio" name="gender" id="male" value="male" checked> 
+            <label for="male">Nam</label>
+
+            <input type="radio" name="gender" id="female" value="female"> 
+            <label for="female">Nữ</label>
+
+            <input type="radio" name="gender" id="other" value="other"> 
+            <label for="other">Khác</label>
             </td>
         </tr>
         <tr>
@@ -157,9 +162,14 @@
         <tr>
             <td>Sở thích</td>
             <td>
-                <input type="checkbox"> Xem phim
-                <input type="checkbox"> Thể thao
-                <input type="checkbox"> Trò chơi
+                <input type="checkbox" id="movie" name="hobby_movie" value="movie">
+                <label for="movie">Xem phim</label>
+
+                <input type="checkbox" id="sport" name="hobby_sport" value="sport">
+                <label for="sport">Thể thao</label>
+
+                <input type="checkbox" id="game" name="hobby_game" value="game">
+                <label for="game">Trò chơi</label>
             </td>
         </tr>
         <tr>
